@@ -76,10 +76,23 @@ $(document).ready(function() {
 
 	$('.experience_block_add').click(function() {
 		var html = $('.experience_block').first().clone();
+		var responsibilities = html.find('.individual_responsibilities');
+		responsibilities.each(function(index, item) {
+			if (index != 0)
+				$(item).remove();
+		});
+		console.log (responsibilities);
 		$('.repeat_experience').before(html);
 		console.log($('.repeat_experience'));
 		return false;
 	});
+
+	 $('.responsibility_block_add').click(function() {
+        var html = $('.individual_responsibilities').first().clone();
+        $('.responsibility_block .text-center').append(html);
+        console.log($('.responsibility_skills'));
+        return false;
+     });
 
 	$('.skill_block_add').click(function() {
 		var html = $('.skill_block').first().clone();
@@ -96,7 +109,6 @@ $(document).ready(function() {
 	});
 
 	$('#userDataForm').submit(function() {
-		console.log('doodle');
 		var userData = {};
 
 		userData.fullName = $('#name').val();
