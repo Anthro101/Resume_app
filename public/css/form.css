@@ -1,0 +1,18 @@
+#home_page {
+	margin: 50px;
+	background-color: rgb(221, 232, 207);
+	padding: 10px 0px 10px 0px;
+}
+
+h1 {
+	text-shadow: 1px 1px 1px #000;
+	font-family: Courier, sans-serif;
+}
+
+.individual_responsibilities input[type="text"] {
+	width: 500px;
+}
+
+.accomplishments input[type="text"] {
+	width: 500px;
+}
