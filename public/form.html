@@ -1,57 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>	
-		<link rel="stylesheet" href="css/normalize.css">
-		<!-- <link rel="stylesheet" href="css/style.css"> -->
-        <link rel="stylesheet" href="css/form.css">
-        <link rel="stylesheet" href="css/bootstrap.css">
+<head>	
+	<link rel="stylesheet" href="css/normalize.css">
+	<!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
 
-		<script type="text/javascript" src="js/jquery.js"></script>
-		<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 
-	</head>
-	<body>
-        <header>
-            <ul class="nav nav-tabs">
-                <li class="active">
-                    <a href="#">Home</a>
-                </li>
-                <li class="active">
-                    <a href="#">Contact Info</a>
-                </li>
-                <li class="active">
-                    <a href="#">Experience</a>
-                </li>
-                <li class="active">
-                    <a href="#">Education</a>
-                </li>
-                <li class="active">
-                    <a href="#">Skills</a>
-                </li>
-                <li class="active">
-                    <a href="#">Accomplishments</a>
-                </li>
-            </ul>
-        </div>
-        </header> 
+</head>
+<body>
+    <header>
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#">Home</a></li>
+            <li class="active"><a href="#">Contact Info</a></li>
+            <li class="active"><a href="#">Experience</a></li>
+            <li class="active"><a href="#">Education</a></li>
+            <li class="active"><a href="#">Skills</a></li>
+            <li class="active"><a href="#">Accomplishments</a></li>
+        </ul>
+    </header> 
 
-        <form id="userDataForm">
-            <fieldset>
+    <form id="userDataForm">
+        <fieldset>
 <!-- THIS STARTS THE GENERAL RESUME SECTION. -->
-
-                <div id="home_page" class="text-center">
-                    <h1 class="text-info">General Resume Application</h1>
-                        <label for="name">Full Legal Name</label>
-                            <input type="text" placeholder="e.g. Cadin Morgan Smith"/><br>
-                            <span for="help-block"><p class="text-info">Your name will be your primary ID.</p></span>
-
+        <div id="home_page" class="text-center">
+            <h1 class="text-info">General Resume Application</h1>
+                <label id="first_name">First Name</label>
+                <input type="text" placeholder="e.g. Cadin"/>
+                <label id="last_name">Last Name</label>
+                <input type="text" placeholder="e.g. Smith"/>
+                <span for="help-block"><p class="text-info">Your name will be your primary ID.</p></span>
+                       
                 <div class="form-inline">
                     <fieldset>
                         <div class="text-center">
-                            <label for="linkedIn">Linked In</label>
+                            <label id="linkedIn">Linked In</label>
                                 <input type="text" placeholder="e.g. www.linkedin.com/CadinS"/>
-                            <label for="personal_website">Personal Website</label>
+                            <label id="personal_website">Personal Website</label>
                                 <input type="text" placeholder="e.g. www.CadinSmith.com"/>
+                            <label id="twitter">Twitter</label>
+                                <input type="text" placeholder="e.g. Anthropology101"/>    
                         </div>
                     </fieldset>  
                 </div>
@@ -62,13 +52,13 @@
             <fieldset>
                 <div class="text-center">
                     <h3><legend>CONTACT INFORMATION</legend></h3>
-                        <label for="street">Street Number and Name</label>
+                        <label id="street">Street Number and Name</label>
                             <input type="text" placeholder="e.g. 411 Information Hwy"/>
-                        <label for="city">City</label>
+                        <label id="city">City</label>
                             <input type="text" placeholder="e.g. Anywhere"/>
-                        <label for="state">State</label>
+                        <label id="state">State</label>
                             <input type="text" placeholder="e.g. CA"/>
-                        <label for="zip_code">Zip Code</label>
+                        <label id="zip_code">Zip Code</label>
                             <input type="text" placeholder="e.g. 00000"/>
                 </div>
             </fieldset>
@@ -78,9 +68,9 @@
         <div class="form-inline">
             <fieldset>
                 <div class="text-center">
-                    <label for="phone">Phone Number</label>
+                    <label id="phone">Phone Number</label>
                         <input type="text" placeholder="e.g. XXX-XXX-XXXX"/>
-                    <label for="email">Email</label>
+                    <label id="email">Email</label>
                         <input type="text" placeholder="e.g. CadinSmith@gmail.com"/>
                 </div>
             </fieldset>
@@ -94,11 +84,11 @@
                     <div class="text-center">
                     <div class="form-inline">
                         <fieldset>
-                            <label for="organization_name">Organization</label>
+                            <label class="organization_name">Organization</label>
                                 <input type="text" placeholder="e.g. University of Awesome"/>
-                            <label for="organization_url">Organization's URL</label>
-                                <input type="text" placeholder="e.g. http://www.UofAwesome.org"/>
-                            <label for="role_in-org">Role/Title</label>
+                            <label class="project">Project</label>
+                                <input type="text" placeholder="e.g. Toy Story 3"/>
+                            <label class="role_in_org">Role/Title</label>
                                 <input type="text" placeholder="e.g. Project Manager"/> 
                         </fieldset>
                     </div>
@@ -111,8 +101,10 @@
                 <!-- No legend since the following code is on a separate line, still part of Experience. -->
                     <label class="location">Location of Organization</label>
                         <input type="text" placeholder="e.g. Anywhere, CA"/>
-                    <label class="dates_of_employment">Date(s) of involvement with Organization</label>
-                        <input type="text" placeholder="e.g. March 2010 to May 2013"/>
+                    <label class="start_date">Start Date</label>
+                        <input type="text" placeholder="e.g. March 2010"/>
+                    <label class="end_date">End Date</label>
+                        <input type="text" placeholder="e.g. May 2013"/>
                 </div>
             </fieldset>
         </div>
@@ -123,7 +115,7 @@
                 <div class="individual_responsibilities">
                     <input type="text" placeholder="e.g. Researched the role of mitochondrial DNA in mixed ancestry individuals."/><br>
                 </div>
-                
+
              </div>        
         </div>
 
