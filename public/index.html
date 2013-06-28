@@ -1,91 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>	
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/style.css">
+<head>	
+	<link rel="stylesheet" href="css/normalize.css">
+	<!-- <link rel="stylesheet" href="css/style.css"> -->
+	<link rel="stylesheet" href="css/bootstrap.css">
 
-		<script type="text/javascript" src="js/jquery.js"></script>
-		<script type="text/javascript" src="js/main.js"></script>
-	</head>
-	<body>
-		<div id="ContactInfo">
-			<h1 id="name"> Charlotte Web </h1>
-				<div class="street_address">
-						<span id="street"> 411 Terrific Pig, </span>
-						<span id="city"> Red Barn, </span>
-						<span id="state"> CA </span>
-						<span id="zip_code"> 91100 </span>
-				</div>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+    <header>
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#">Home</a></li>
+            <li class="active"><a href="#">Contact Info</a></li>
+            <li class="active"><a href="#">Experience</a></li>
+            <li class="active"><a href="#">Education</a></li>
+            <li class="active"><a href="#">Skills</a></li>
+            <li class="active"><a href="#">Accomplishments</a></li>
+        </ul>   
+    </header> 
 
-				<div class="personal_info">
-						<span id="phone"> Phone: 555-555-5555 </span>
-						<span id="email"> Email: Naughty_BY_Nature@gmail.com </span>
-				</div>
+	<form id="userDataForm">
+        <fieldset>
+<!-- THIS STARTS THE GENERAL RESUME SECTION. -->
+		<div class="ContactInfo">
+            <h1 class="text-center" id="name">Charlotte Web</h1><br>
+            <div class="form-inline">
+            	<fieldset>
+        		<div class="text-center">
+	                <label id="street">411 Terrific Pig,</label>
+	                <label id="city">Red Barn,</label>
+	 				<label id="state">CA</label>
+	 				<label id="zip_code">91100</label>
+	 			</div>
+	 			</fieldset>
+ 			</div> 	
+ 		</div>       
+    
+        <div class="ContactInfo">	
+        	<div class="form-inline">
+        		<fieldset>
+        		<div  class="text-center">
+                	<label id="phone">Phone: (555)555-5555</label>
+                	<label id="email">Email: Naughty_By_Nature@gmail.com</label>
+            	</div>
+            	</fieldset>
+            </div>
+        </div>   
 
-		</div>	
-		<div class="container1">
-				<div id="Experience">
-					<h1 id="experience"> Experience </h1>
-			
-				<table class="Organization">
-					<tr>
-						<th>Organization</th>
-						<th>Organization's URL</th>
-						<th>Dates</th>
-						<th>Role</th>
-						<th>Location</th>
-					</tr>
+        <div class="ContactInfo">	
+        	<div class="form-inline">
+        		<fieldset>
+        		<div  class="text-center">
+        			<label id="linkedIn">linkedin.com/pub/charlotte-web/1/969/8b6</label>
+        			<label id="twitter">BarnyardWebDesign</label>
+        		</div>
+        	</fieldset>
+        	</div>
+        </div>
 
-					<tr>
-						<td>Save Wilbur</td>
-						<td>www.littlepiggy.com</td>
-						<td>Lifetime Appointment</td>
-						<td>Spinner of Truth</td>
-						<td>Web of Lies, CA</td>
-					</tr>
-				</table>
-			<div class="container2">
-				<table class="Responsibilities">
-					<tr>
- 						<th>Responsibilities</th>
-					</tr>
-
-					<tr>
-						<td>Befriended a terrific, radiant, and humble pig, consistently saving him from certain demise. Creatively spun multiple web designs which led to a ten-fold increase in first-time customer visits, maintaining a 90% retention rate while simultaneously holding steadfast to the organization's mission of saving the pig from the frying pan. Managed a diverse barnyard team, effectively coordinating activities within the bullpen when Zuckerman's Farm was transported to the County Fair.  </td>
-					</tr>
-				</table>
-			</div>
-		
-				<table class="Organization">
-					<tr>
-						<th>Organization</th>
-						<th>Organization's URL</th>
-						<th>Dates</th>
-						<th>Role</th>
-						<th>Location</th>
-					</tr>
-
-					<tr>
-						<td>Charlotte's Webs</td>
-						<td>www.8legsofwork.com</td>
-						<td>1952 to 1985</td>
-						<td>Chief Web Architect</td>
-						<td>Red Barn, CA</td>
-					</tr>
-
-				<table class="Responsibilities">
-					<tr>
- 						<th>Responsibilities</th>
-					</tr>
-
-					<tr>
-						<td>Self-employed spider, assisted barnyard animals in various stages of personal development and facilitated a well-maintained and peaceful cooperation among diverse species. </td>
-					</tr>
-				</table>
-			</div>
+		<div class="text-center" id="experience">
+			<h1>Experience</h1>
+				<h5>Organization</h5>
+					<p>Save Wilbur</p>
+				<h5>Project</h5>
+					<p>Little Piggy</p>
+				<h5>Start Date</h5>
+					<p>Birth</p>
+				<h5>End Date</h5>
+					<p>Old Age</p>
+				<h5>Role/Title</h5>
+					<p>Spinner of Truth</p>
+				<h5>Location</h5>
+					<p>Web of Lies, CA</p>
+				<h5>Responsibilities</h5>
+					<p>Befriended a terrific, radiant, and humble pig, consistently saving him from certain demise.</p>
+					<p>Creatively spun multiple web designs which led to a ten-fold increase in first-time customer visits, maintaining a 90% retention rate while simultaneously holding steadfast to the organization's mission of saving the pig from the frying pan.</p>
+					<p>Managed a diverse barnyard team, effectively coordinating activities within the bullpen when Zuckerman's Farm was transported to the County Fair.</p>
 		</div>
 
-		<div class="table" id="Skills">
+		<div class="text-center" id="experience">
+			<hr>
+				<h5>Organization</h5>
+					<p>Charlotte's Webs</p>
+				<h5>Project</h5>
+					<p>8 Legs of Work</p>
+				<h5>Start Date</h5>
+					<p>1952</p>
+				<h5>End Date</h5>
+					<p>1985</p>
+				<h5>Role/Title</h5>
+					<p>Chief Web Architect</p>
+				<h5>Location</h5>
+					<p>Red Barn, CA</p>
+				<h5>Responsibilities</h5>
+					<p>Self-employed spider, assisted barnyard animals in various stages of personal development and facilitated a well-maintained and peaceful cooperation among diverse species.</p>
+		</div>
+		
+		<!-- <div class="table" id="Skills">
 			<h1> Skills </h1>
 				<ul>
 					<li>Skill Name</li>
@@ -117,3 +129,4 @@
 	</body>
 </html>
 
+ -->
