@@ -99,6 +99,104 @@ $(document).ready(function() {
 		}
 	});
 
+		$.ajax('/api/resumes/51c2084640ea606911000001', {
+		complete : function(response) {
+			$('.school_name').html(response.responseJSON.school.name);
+			console.log(response.responseJSON);
+		}
+	});
+
+		$.ajax('/api/resumes/51c2084640ea606911000001', {
+		complete : function(response) {
+			$('.degree').html(response.responseJSON.school.degree);
+			console.log(response.responseJSON);
+		}
+	});
+
+		$.ajax('/api/resumes/51c2084640ea606911000001', {
+		complete : function(response) {
+			$('.gpa').html(response.responseJSON.school.gpa);
+			console.log(response.responseJSON);
+		}
+	});
+
+		$.ajax('/api/resumes/51c2084640ea606911000001', {
+		complete : function(response) {
+			$('.gpa').html(response.responseJSON.school.gpa);
+			console.log(response.responseJSON);
+		}
+	});
+
+		$.ajax('/api/resumes/51c2084640ea606911000001', {
+		complete : function(response) {
+			$('.major').html(response.responseJSON.school.major);
+			console.log(response.responseJSON);
+		}
+	});
+
+		$.ajax('/api/resumes/51c2084640ea606911000001', {
+		complete : function(response) {
+			$('.minor').html(response.responseJSON.school.minor);
+			console.log(response.responseJSON);
+		}
+	});
+
+		$.ajax('/api/resumes/51c2084640ea606911000001', {
+		complete : function(response) {
+			$('.uni_start_date').html(response.responseJSON.school.start_month_year);
+			console.log(response.responseJSON);
+		}
+	});
+
+		$.ajax('/api/resumes/51c2084640ea606911000001', {
+		complete : function(response) {
+			$('.uni_end_date').html(response.responseJSON.school.end_month_year);
+			console.log(response.responseJSON);
+		}
+	});
+
+		$.ajax('/api/resumes/51c2084640ea606911000001', {
+		complete : function(response) {
+			$('.title').html(response.responseJSON.skill.title);
+			console.log(response.responseJSON);
+		}
+	});
+
+		$.ajax('/api/resumes/51c2084640ea606911000001', {
+		complete : function(response) {
+			$('.category').html(response.responseJSON.skill.category);
+			console.log(response.responseJSON);
+		}
+	});
+
+		$.ajax('/api/resumes/51c2084640ea606911000001', {
+		complete : function(response) {
+			$('.skill_experience').html(response.responseJSON.skill.experience);
+			console.log(response.responseJSON);
+		}
+	});
+
+		$.ajax('/api/resumes/51c2084640ea606911000001', {
+		complete : function(response) {
+			$('.description').html(response.responseJSON.accomplishment.description);
+			console.log(response.responseJSON);
+		}
+	});
+
+		$.ajax('/api/resumes/51c2084640ea606911000001', {
+		complete : function(response) {
+			$('.award_date').html(response.responseJSON.accomplishment.month_year);
+			console.log(response.responseJSON);
+		}
+	});
+
+		$.ajax('/api/resumes/51c2084640ea606911000001', {
+		complete : function(response) {
+			$('.award_title').html(response.responseJSON.accomplishment.title);
+			console.log(response.responseJSON);
+		}
+	});
+
 // console.log('#userDataForm');
 // $(document).ready(function() {
 
