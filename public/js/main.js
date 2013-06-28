@@ -111,7 +111,30 @@ $(document).ready(function() {
 	$('#userDataForm').submit(function() {
 		var userData = {};
 
-		userData.fullName = $('#name').val();
+		userData.name_first = $('#first_name').val();
+		userData.name_last = $('#last_name').val();
+		userData.linked_in = $('#linkedIn').val();
+		userData.website = $('#personal_website').val();
+		userData.twitter = $('#twitter').val();
+		
+		userData.contact_info = {};
+		userData.contact_info.email = $('#email').val();
+		userData.contact_info.phone = $('#phone').val();
+
+		userData.contact_info.street_address = {};
+		userData.contact_info.street_address.street = $('#street').val();
+		userData.contact_info.street_address.city = $('#city').val();
+		userData.contact_info.street_address.state = $('#state').val();
+		userData.contact_info.street_address.zip_code = $('#zip').val(); 
+
+		userData.experience = [];
+		var experience_blocks = $('.experience_block');
+			experience_blocks.each(function(index, element) {
+				var organization = $('.organization_name')
+			});
+
+
+		var street
 
 		userData.schools = [];
 		var education_blocks = $('.education_block');
