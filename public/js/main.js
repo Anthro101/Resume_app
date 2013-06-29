@@ -1,201 +1,201 @@
-$(document).ready(function() {
-	console.log('im alive');
-	$.ajax('/api/resumes/51c2084640ea606911000001', {
-		complete : function(response) {
-			$('#name').html(response.responseJSON.name_first + ' ' + response.responseJSON.name_last);
-			console.log(response.responseJSON);
-		}
-	});
-});
+// $(document).ready(function() {
+// 	console.log('im alive');
+// 	$.ajax('/api/resumes/51c2084640ea606911000001', {
+// 		complete : function(response) {
+// 			$('#name').html(response.responseJSON.name_first + ' ' + response.responseJSON.name_last);
+// 			console.log(response.responseJSON);
+// 		}
+// 	});
+// });
 
-	$.ajax('/api/resumes/51c2084640ea606911000001', {
-		complete : function(response) {
-			$('#street').html(response.responseJSON.contact_info.street_address.street);
-			console.log(response.responseJSON);
-		}
-	});
+// 	$.ajax('/api/resumes/51c2084640ea606911000001', {
+// 		complete : function(response) {
+// 			$('#street').html(response.responseJSON.contact_info.street_address.street);
+// 			console.log(response.responseJSON);
+// 		}
+// 	});
 
-	$.ajax('/api/resumes/51c2084640ea606911000001', {
-		complete : function(response) {
-			$('#city').html(response.responseJSON.contact_info.street_address.city);
-			console.log(response.responseJSON);
-		}
-	});
+// 	$.ajax('/api/resumes/51c2084640ea606911000001', {
+// 		complete : function(response) {
+// 			$('#city').html(response.responseJSON.contact_info.street_address.city);
+// 			console.log(response.responseJSON);
+// 		}
+// 	});
 
-	$.ajax('/api/resumes/51c2084640ea606911000001', {
-		complete : function(response) {
-			$('#state').html(response.responseJSON.contact_info.street_address.state);
-			console.log(response.responseJSON);
-		}
-	});
+// 	$.ajax('/api/resumes/51c2084640ea606911000001', {
+// 		complete : function(response) {
+// 			$('#state').html(response.responseJSON.contact_info.street_address.state);
+// 			console.log(response.responseJSON);
+// 		}
+// 	});
 
-	$.ajax('/api/resumes/51c2084640ea606911000001', {
-		complete : function(response) {
-			$('#zip_code').html(response.responseJSON.contact_info.street_address.zip_code);
-			console.log(response.responseJSON);
-		}
-	});
+// 	$.ajax('/api/resumes/51c2084640ea606911000001', {
+// 		complete : function(response) {
+// 			$('#zip_code').html(response.responseJSON.contact_info.street_address.zip_code);
+// 			console.log(response.responseJSON);
+// 		}
+// 	});
 
-		$.ajax('/api/resumes/51c2084640ea606911000001', {
-		complete : function(response) {
-			$('#phone').html(response.responseJSON.contact_info.phone);
-			console.log(response.responseJSON);
-		}
-	});
+// 		$.ajax('/api/resumes/51c2084640ea606911000001', {
+// 		complete : function(response) {
+// 			$('#phone').html(response.responseJSON.contact_info.phone);
+// 			console.log(response.responseJSON);
+// 		}
+// 	});
 
-	$.ajax('/api/resumes/51c2084640ea606911000001', {
-		complete : function(response) {
-			$('#email').html(response.responseJSON.contact_info.email);
-			console.log(response.responseJSON);
-		}
-	});
+// 	$.ajax('/api/resumes/51c2084640ea606911000001', {
+// 		complete : function(response) {
+// 			$('#email').html(response.responseJSON.contact_info.email);
+// 			console.log(response.responseJSON);
+// 		}
+// 	});
 	
-	$.ajax('/api/resumes/51c2084640ea606911000001', {
-		complete : function(response) {
-			$('.organization_name').html(response.responseJSON.experience.organization);
-			console.log(response.responseJSON);
-		}
-	});
+// 	$.ajax('/api/resumes/51c2084640ea606911000001', {
+// 		complete : function(response) {
+// 			$('.organization_name').html(response.responseJSON.experience.organization);
+// 			console.log(response.responseJSON);
+// 		}
+// 	});
 
-	$.ajax('/api/resumes/51c2084640ea606911000001', {
-		complete : function(response) {
-			$('.project').html(response.responseJSON.experience.project);
-			console.log(response.responseJSON);
-		}
-	});
+// 	$.ajax('/api/resumes/51c2084640ea606911000001', {
+// 		complete : function(response) {
+// 			$('.project').html(response.responseJSON.experience.project);
+// 			console.log(response.responseJSON);
+// 		}
+// 	});
 
-		$.ajax('/api/resumes/51c2084640ea606911000001', {
-		complete : function(response) {
-			$('.role_in_org').html(response.responseJSON.experience.role);
-			console.log(response.responseJSON);
-		}
-	// });
+// 		$.ajax('/api/resumes/51c2084640ea606911000001', {
+// 		complete : function(response) {
+// 			$('.role_in_org').html(response.responseJSON.experience.role);
+// 			console.log(response.responseJSON);
+// 		}
+// 	// });
 
-		$.ajax('/api/resumes/51c2084640ea606911000001', {
-		complete : function(response) {
-			$('.location').html(response.responseJSON.experience.location);
-			console.log(response.responseJSON);
-		}
-	});
+// 		$.ajax('/api/resumes/51c2084640ea606911000001', {
+// 		complete : function(response) {
+// 			$('.location').html(response.responseJSON.experience.location);
+// 			console.log(response.responseJSON);
+// 		}
+// 	});
 
-		$.ajax('/api/resumes/51c2084640ea606911000001', {
-		complete : function(response) {
-			$('.start_date').html(response.responseJSON.experience.start_month_year);
-			console.log(response.responseJSON);
-		}
-	});
+// 		$.ajax('/api/resumes/51c2084640ea606911000001', {
+// 		complete : function(response) {
+// 			$('.start_date').html(response.responseJSON.experience.start_month_year);
+// 			console.log(response.responseJSON);
+// 		}
+// 	});
 
-		$.ajax('/api/resumes/51c2084640ea606911000001', {
-		complete : function(response) {
-			$('.end_date').html(response.responseJSON.experience.end_month_year);
-			console.log(response.responseJSON);
-		}
-	});
+// 		$.ajax('/api/resumes/51c2084640ea606911000001', {
+// 		complete : function(response) {
+// 			$('.end_date').html(response.responseJSON.experience.end_month_year);
+// 			console.log(response.responseJSON);
+// 		}
+// 	});
 
-		$.ajax('/api/resumes/51c2084640ea606911000001', {
-		complete : function(response) {
-			$('.job_description').html(response.responseJSON.experience.responsibilities);
-			console.log(response.responseJSON);
-		}
-	});
+// 		$.ajax('/api/resumes/51c2084640ea606911000001', {
+// 		complete : function(response) {
+// 			$('.job_description').html(response.responseJSON.experience.responsibilities);
+// 			console.log(response.responseJSON);
+// 		}
+// 	});
 
-		$.ajax('/api/resumes/51c2084640ea606911000001', {
-		complete : function(response) {
-			$('.school_name').html(response.responseJSON.school.name);
-			console.log(response.responseJSON);
-		}
-	});
+// 		$.ajax('/api/resumes/51c2084640ea606911000001', {
+// 		complete : function(response) {
+// 			$('.school_name').html(response.responseJSON.school.name);
+// 			console.log(response.responseJSON);
+// 		}
+// 	});
 
-		$.ajax('/api/resumes/51c2084640ea606911000001', {
-		complete : function(response) {
-			$('.degree').html(response.responseJSON.school.degree);
-			console.log(response.responseJSON);
-		}
-	});
+// 		$.ajax('/api/resumes/51c2084640ea606911000001', {
+// 		complete : function(response) {
+// 			$('.degree').html(response.responseJSON.school.degree);
+// 			console.log(response.responseJSON);
+// 		}
+// 	});
 
-		$.ajax('/api/resumes/51c2084640ea606911000001', {
-		complete : function(response) {
-			$('.gpa').html(response.responseJSON.school.gpa);
-			console.log(response.responseJSON);
-		}
-	});
+// 		$.ajax('/api/resumes/51c2084640ea606911000001', {
+// 		complete : function(response) {
+// 			$('.gpa').html(response.responseJSON.school.gpa);
+// 			console.log(response.responseJSON);
+// 		}
+// 	});
 
-		$.ajax('/api/resumes/51c2084640ea606911000001', {
-		complete : function(response) {
-			$('.gpa').html(response.responseJSON.school.gpa);
-			console.log(response.responseJSON);
-		}
-	});
+// 		$.ajax('/api/resumes/51c2084640ea606911000001', {
+// 		complete : function(response) {
+// 			$('.gpa').html(response.responseJSON.school.gpa);
+// 			console.log(response.responseJSON);
+// 		}
+// 	});
 
-		$.ajax('/api/resumes/51c2084640ea606911000001', {
-		complete : function(response) {
-			$('.major').html(response.responseJSON.school.major);
-			console.log(response.responseJSON);
-		}
-	});
+// 		$.ajax('/api/resumes/51c2084640ea606911000001', {
+// 		complete : function(response) {
+// 			$('.major').html(response.responseJSON.school.major);
+// 			console.log(response.responseJSON);
+// 		}
+// 	});
 
-		$.ajax('/api/resumes/51c2084640ea606911000001', {
-		complete : function(response) {
-			$('.minor').html(response.responseJSON.school.minor);
-			console.log(response.responseJSON);
-		}
-	});
+// 		$.ajax('/api/resumes/51c2084640ea606911000001', {
+// 		complete : function(response) {
+// 			$('.minor').html(response.responseJSON.school.minor);
+// 			console.log(response.responseJSON);
+// 		}
+// 	});
 
-		$.ajax('/api/resumes/51c2084640ea606911000001', {
-		complete : function(response) {
-			$('.uni_start_date').html(response.responseJSON.school.start_month_year);
-			console.log(response.responseJSON);
-		}
-	});
+// 		$.ajax('/api/resumes/51c2084640ea606911000001', {
+// 		complete : function(response) {
+// 			$('.uni_start_date').html(response.responseJSON.school.start_month_year);
+// 			console.log(response.responseJSON);
+// 		}
+// 	});
 
-		$.ajax('/api/resumes/51c2084640ea606911000001', {
-		complete : function(response) {
-			$('.uni_end_date').html(response.responseJSON.school.end_month_year);
-			console.log(response.responseJSON);
-		}
-	});
+// 		$.ajax('/api/resumes/51c2084640ea606911000001', {
+// 		complete : function(response) {
+// 			$('.uni_end_date').html(response.responseJSON.school.end_month_year);
+// 			console.log(response.responseJSON);
+// 		}
+// 	});
 
-		$.ajax('/api/resumes/51c2084640ea606911000001', {
-		complete : function(response) {
-			$('.title').html(response.responseJSON.skill.title);
-			console.log(response.responseJSON);
-		}
-	});
+// 		$.ajax('/api/resumes/51c2084640ea606911000001', {
+// 		complete : function(response) {
+// 			$('.title').html(response.responseJSON.skill.title);
+// 			console.log(response.responseJSON);
+// 		}
+// 	});
 
-		$.ajax('/api/resumes/51c2084640ea606911000001', {
-		complete : function(response) {
-			$('.category').html(response.responseJSON.skill.category);
-			console.log(response.responseJSON);
-		}
-	});
+// 		$.ajax('/api/resumes/51c2084640ea606911000001', {
+// 		complete : function(response) {
+// 			$('.category').html(response.responseJSON.skill.category);
+// 			console.log(response.responseJSON);
+// 		}
+// 	});
 
-		$.ajax('/api/resumes/51c2084640ea606911000001', {
-		complete : function(response) {
-			$('.skill_experience').html(response.responseJSON.skill.experience);
-			console.log(response.responseJSON);
-		}
-	});
+// 		$.ajax('/api/resumes/51c2084640ea606911000001', {
+// 		complete : function(response) {
+// 			$('.skill_experience').html(response.responseJSON.skill.experience);
+// 			console.log(response.responseJSON);
+// 		}
+// 	});
 
-		$.ajax('/api/resumes/51c2084640ea606911000001', {
-		complete : function(response) {
-			$('.description').html(response.responseJSON.accomplishment.description);
-			console.log(response.responseJSON);
-		}
-	});
+// 		$.ajax('/api/resumes/51c2084640ea606911000001', {
+// 		complete : function(response) {
+// 			$('.description').html(response.responseJSON.accomplishment.description);
+// 			console.log(response.responseJSON);
+// 		}
+// 	});
 
-		$.ajax('/api/resumes/51c2084640ea606911000001', {
-		complete : function(response) {
-			$('.award_date').html(response.responseJSON.accomplishment.month_year);
-			console.log(response.responseJSON);
-		}
-	});
+// 		$.ajax('/api/resumes/51c2084640ea606911000001', {
+// 		complete : function(response) {
+// 			$('.award_date').html(response.responseJSON.accomplishment.month_year);
+// 			console.log(response.responseJSON);
+// 		}
+// 	});
 
-		$.ajax('/api/resumes/51c2084640ea606911000001', {
-		complete : function(response) {
-			$('.award_title').html(response.responseJSON.accomplishment.title);
-			console.log(response.responseJSON);
-		}
-	});
+// 		$.ajax('/api/resumes/51c2084640ea606911000001', {
+// 		complete : function(response) {
+// 			$('.award_title').html(response.responseJSON.accomplishment.title);
+// 			console.log(response.responseJSON);
+// 		}
+// 	});
 
 // console.log('#userDataForm');
 // $(document).ready(function() {
@@ -281,50 +281,55 @@ $(document).ready(function() {
 // 			});
 // 		});
 
-// 		// school_groups - create array to store multiple schools
-// 		userData.schools = []; 
+		// school_groups - create array to store multiple schools
+		userData.schools = []; 
 
-// 		var school_groups = $('.school_group'); // select all schools, get each .class
+		var education_blocks = $('.education_block'); // select all schools, get each .class
 
-// 		// for each class, create object with keys and values:
-// 		school_groups.each(function(index, item) {
-// 			var end 			= $(item).find('.end_month_year').val();
-// 			var end_month_year	= end.slice(5,7) + end.slice(2,4); // slice month-year to get into MMYY format
-// 			userData.schools.push({
-// 				name 			: $(item).find('.schools_name').val(),
-// 				degree			: $(item).find('.schools_degree').val(),
-// 				major 			: $(item).find('.schools_major').val(),
-// 				minor			: $(item).find('.schools_minor').val(),
-// 				end_month_year	: end_month_year
-// 			}); // end .push loop
+		// for each class, create object with keys and values:
+		education_blocks.each(function(index, item) {
+			var end 			= $(item).find('.uni_end_date').val();
+			var uni_end_date	= end.slice(5,7) + end.slice(2,4);
+			var start     		= $(item).find('.uni_start_date').val();
+			var uni_start_date	= start.slice(5,7) + start.slice(2,4);
+			 // slice month-year to get into MMYY format
+			userData.schools.push({
+				name 			: $(item).find('.school_name').val(),
+				degree			: $(item).find('.degree').val(),
+				gpa				: $(item).find('.gpa').val(),
+				major 			: $(item).find('.major').val(),
+				minor			: $(item).find('.minor').val(),
+				start_month_year: uni_start_date,
+				end_month_year	: uni_end_date
+			}); // end .push loop
 
-// 		});
+		});
 
-// 		userData.skills = []; 
+		// userData.skills = []; 
 
-// 		var skill_groups = $('.skill_group');
+		// var skill_blocks = $('.skill_block');
 
-// 		skill_groups.each(function(index, item) {
-// 			userData.skills.push({
-// 				title 			: $(item).find('.title').val(),
-// 				level 			: $(item).find('.level').val(),
-// 			}); 
+		// skill_blocks.each(function(index, item) {
+		// 	userData.skills.push({
+		// 		title 			: $(item).find('.title').val(),
+		// 		level 			: $(item).find('.skill_experience').val(),
+		// 	}); 
 
-// 		}); 
+		// }); 
 // 		// awards & accomplishments
-// 		userData.accomplishments = [];
+		// userData.accomplishments = [];
 
-// 		var accomplishments_groups= $('.accomplishments_group');
+		// var award_blocks= $('.award_block');
 
-// 		accomplishments_groups.each(function(index, item) {
-// 			var date			= $(item).find('.month_year').val();
-// 			var month_year 		= date.slice(5,7) + date.slice(2,4);
-// 			userData.accomplishments.push({
-// 				title			: $(item).find('.title').val(),
-// 				description		: $(item).find('.description').val(),
-// 				month_year		: month_year
-// 			}); 
-// 		});
+		// award_blocks.each(function(index, item) {
+		// 	var date			= $(item).find('.award_date').val();
+		// 	var award_date 		= date.slice(5,7) + date.slice(2,4);
+		// 	userData.accomplishments.push({
+		// 		title			: $(item).find('.award_title').val(),
+		// 		description		: $(item).find('.description').val(),
+		// 		award_date		: award_date
+		// 	}); 
+		// });
 // 		console.log(userData);
 
 // 		var postData = JSON.stringify ({'resume': userData});
@@ -340,14 +345,3 @@ $(document).ready(function() {
 // });
 		
 
-// 		var street
-
-// 		userData.schools = [];
-// 		var education_blocks = $('.education_block');
-// 		console.log(education_blocks);
-
-// 		console.log(userData);
-// 		return false;
-// 	});
-
-// });
