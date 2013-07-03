@@ -1,12 +1,32 @@
+body {
+	background-image: url("../images/bgi4.jpg");
+	background-position: top;
+	background-repeat: repeat;
+}
+
 #home_page {
 	margin: 50px;
-	background-color: rgb(221, 232, 207);
+	background-color: rgb(115, 71, 79);
 	padding: 10px 0px 10px 0px;
+	border-radius: 20px;
+	opacity: 0.9;
+	color: white;
+	border: 3px solid rgb(00, 00, 66);
 }
 
 h1 {
 	text-shadow: 1px 1px 1px #000;
 	font-family: Courier, sans-serif;
+}
+
+.contact {
+	margin: 50px;
+	background-color: rgb(245, 223, 181);
+	border-radius: 20px;
+	color: black;
+	opacity: 0.9;
+	border: 3px solid rgb(00, 00, 66);
+	width: 92%;
 }
 
 .individual_responsibilities input[type="text"] {
@@ -15,4 +35,29 @@ h1 {
 
 .accomplishments input[type="text"] {
 	width: 500px;
+}
+
+.responsibility_block_add {
+	color: black;
+	font-weight: bold;
+}
+
+.experience_block_add {
+	color: black;
+	font-weight: bold;
+}
+
+.education_block_add {
+	color: black;
+	font-weight: bold;
+}
+
+.skill_block_add {
+	color: black;
+	font-weight: bold;
+}
+
+.award_block_add {
+	color: black;
+	font-weight: bold;
 }
