@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>R&eacute;sum&eacute;</title>
+  </head>
+  <body>
+    <button id="test">Test</button>
+    <button id="update">Update</button>
+    <button id="delete">Delete</button>
+    <input type="text" id="id_to_delete"/> <!-- This creates a text box. Copy an id number from JSON, paste it into the text box, hit the delete button and when you refresh the JSON page, the file will have been deleted. -->
+	
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript">
+
+    
+    var resume = {"name_first" :"Bob"};
+      var data = JSON.stringify({"resume": resume});
+         
+    $(document).ready(function() {
+      console.log("loaded");
+      // console.log(data)
+      $('#test').on('click', function() {
+  		  $.ajax({
+  		    method: 'POST',
+  		    url: '/',
+  		    data: data,
+          success: function(data) {
+            console.log("success-Posted Data", data);
+          }
+  		  });//end of ajax 
+      });
+    });
+
+    $(document).ready(function() {
+        $('#update').on('click', function() {
+      $.ajax({
+        method: 'POST', //I don't know why I have two POSTS, all I know is that PUT didn't work.//
+        url: '/',
+        data: data,
+        success: function(data) {
+          console.log("success-Posted Update", data);
+        }
+      });
+      });
+    });
+    
+    $(document).ready(function() { 
+      $('#delete').on('click', function() {
+      $.ajax({
+        method: 'DELETE',
+        url: '/' + $('#id_to_delete').val(), //This creates the text box and allows us to delete the file in the text box.//
+        success: function(data) {
+          console.log("success-Posted GONE");
+        }
+      });
+      });
+    });
+  //end of document 
+    </script>
+  </body>
+</html>

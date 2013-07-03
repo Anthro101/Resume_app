@@ -2,137 +2,120 @@
 <html lang="en">
 <head>	
 	<link rel="stylesheet" href="css/normalize.css">
-	<!-- <link rel="stylesheet" href="css/style.css"> -->
+	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
 
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
-    <header>
-        <ul class="nav nav-tabs">
-            <li class="active"><a href="#">Home</a></li>
-            <li class="active"><a href="#">Contact Info</a></li>
-            <li class="active"><a href="#">Experience</a></li>
-            <li class="active"><a href="#">Education</a></li>
-            <li class="active"><a href="#">Skills</a></li>
-            <li class="active"><a href="#">Accomplishments</a></li>
-        </ul>   
-    </header> 
-
-	<form id="userDataForm">
-        <fieldset>
+  
+	<!-- <form id="userDataForm">
+        <fieldset> -->
 <!-- THIS STARTS THE GENERAL RESUME SECTION. -->
-		<div class="ContactInfo">
-            <h1 class="text-center" id="name">Charlotte Web</h1><br>
+		<div class="contactInfo">
+            <h1 id="name">Charlotte Web</h1><br>
             <div class="form-inline">
-            	<fieldset>
-        		<div class="text-center">
+            	<!-- <fieldset> -->
+        		<div class="address">
 	                <label id="street">411 Terrific Pig,</label>
 	                <label id="city">Red Barn,</label>
 	 				<label id="state">CA</label>
 	 				<label id="zip_code">91100</label>
 	 			</div>
-	 			</fieldset>
+	 			<!-- </fieldset> -->
  			</div> 	
  		</div>       
     
-        <div class="ContactInfo">	
+        <div class="contactInfo">	
         	<div class="form-inline">
-        		<fieldset>
-        		<div  class="text-center">
-                	<label id="phone">Phone: (555)555-5555</label>
-                	<label id="email">Email: Naughty_By_Nature@gmail.com</label>
+        		<!-- <fieldset> -->
+        		<div  class="personalContact">
+                	<span id="phone">Phone: (555)555-5555</span>
+                	<span id="email">Email: Naughty_By_Nature@gmail.com</span>
             	</div>
-            	</fieldset>
+            	<!-- </fieldset> -->
             </div>
         </div>   
 
-        <div class="ContactInfo">	
+        <div class="contactInfo">	
         	<div class="form-inline">
-        		<fieldset>
-        		<div  class="text-center">
-        			<label id="linkedIn">linkedin.com/pub/charlotte-web/1/969/8b6</label>
-        			<label id="twitter">BarnyardWebDesign</label>
+        		<!-- <fieldset> -->
+        		<div  class="socialMedia">
+        			<span id="linkedIn">linkedin.com/pub/charlotte-web/1/969/8b6</span>
+        			<span id="twitter">@BarnyardWebDesign</span>
         		</div>
-        	</fieldset>
+        	<!-- </fieldset> -->
         	</div>
         </div>
 
-		<div class="text-center" id="experience">
+		<div class="experience">
 			<h1>Experience</h1>
-				<h5>Organization</h5>
-					<p>Save Wilbur</p>
-				<h5>Project</h5>
-					<p>Little Piggy</p>
-				<h5>Start Date</h5>
-					<p>Birth</p>
-				<h5>End Date</h5>
-					<p>Old Age</p>
-				<h5>Role/Title</h5>
-					<p>Spinner of Truth</p>
-				<h5>Location</h5>
-					<p>Web of Lies, CA</p>
-				<h5>Responsibilities</h5>
-					<p>Befriended a terrific, radiant, and humble pig, consistently saving him from certain demise.</p>
-					<p>Creatively spun multiple web designs which led to a ten-fold increase in first-time customer visits, maintaining a 90% retention rate while simultaneously holding steadfast to the organization's mission of saving the pig from the frying pan.</p>
-					<p>Managed a diverse barnyard team, effectively coordinating activities within the bullpen when Zuckerman's Farm was transported to the County Fair.</p>
+			<div class="experience_inner">
+				<div class="jobInfo">
+					<h5 class="org_outer">Organization</h5>
+						<p class="organization_name">Save Wilbur</p>
+					<h5 class="project_outer">Project</h5>
+						<p class="project">Little Piggy</p>
+					<h5 class="start_date_outer">Start Date</h5>
+						<p class="start_date">Birth</p>
+					<h5 class="end_date_outer">End Date</h5>
+						<p class="end_date">Old Age</p>
+				</div>
+				<div class="job_details">
+					<h5>Role/Title</h5>
+						<p class="role_in_org">Spinner of Truth</p>
+					<h5>Location</h5>
+						<p class="location">Web of Lies, CA</p>
+					<h5>Responsibilities</h5>
+						<div class="job_description">
+						<p>Befriended a terrific, radiant, and humble pig, consistently saving him from certain demise.</p>
+						<p>Creatively spun multiple web designs which led to a ten-fold increase in first-time customer visits, maintaining a 90% retention rate while simultaneously holding steadfast to the organization's mission of saving the pig from the frying pan.</p>
+						<p>Managed a diverse barnyard team, effectively coordinating activities within the bullpen when Zuckerman's Farm was transported to the County Fair.</p>
+					</div>
+					<hr class="line-separator"></hr>  <!-- Input thicker line break to distinguish between experiences. -->
+				</div>
+			</div>
 		</div>
 
-		<div class="text-center" id="experience">
-			<hr>
-				<h5>Organization</h5>
-					<p>Charlotte's Webs</p>
-				<h5>Project</h5>
-					<p>8 Legs of Work</p>
-				<h5>Start Date</h5>
-					<p>1952</p>
-				<h5>End Date</h5>
-					<p>1985</p>
-				<h5>Role/Title</h5>
-					<p>Chief Web Architect</p>
-				<h5>Location</h5>
-					<p>Red Barn, CA</p>
-				<h5>Responsibilities</h5>
-					<p>Self-employed spider, assisted barnyard animals in various stages of personal development and facilitated a well-maintained and peaceful cooperation among diverse species.</p>
-		</div>
-
-		<div class="text-center" id="education">
+		<div class="education">
 			<h1>Education</h1>
+			<div class="education_inner">
 				<label><h5>Institution</h5></label>
-					<p>Arachnid Academy</p>
+					<p class="school_name">Arachnid Academy</p>
 				<label><h5>Degree</h5></label>
-					<p>B.S.</p>
+					<p class="degree">B.S.</p>
 				<label><h5>GPA</h5></label>
-					<p>4.0</p>
+					<p class="gpa">4.0</p>
 				<label><h5>Major</h5></label>
-					<p>Web Development</p>
+					<p class="major">Web Development</p>
 				<label><h5>Minor</h5></label>
-					<p>N/A</p>
+					<p class="minor">N/A</p>
 				<label><h5>Start Date</h5></label>
-					<p>September 1997</p>
+					<p class="uni_start_date">September 1997</p>
 				<label><h5>End Date</h5></labek>
-					<p>May 2001</p>
+					<p class="uni_end_date">May 2001</p>
+			</div>
 		</div>
-		
-		<div class="text-left" id="skills">
+
+		<div class="skills">
 			<h1>Skills</h1>
 				<label><h5>Skill Set Name</h5></label>
-					<p>Ruby</p>
+					<p class="title">Ruby</p>
 				<label><h5>Category</h5></label>
-					<p>Programming Language</p>
+					<p class="category">Programming Language</p>
 				<label><h5>Skill Level</h5>/label>
-					<p>Expert</p>
+					<p class="skill_experience">Expert</p>
 		</div>
 
-		<div class="text-right" id="accomplishments">
+		<div class="accomplishments">
 			<h1>Accomplishments</h1>
 				<label><h5>Description</h5></label>
-					<p>Was the inspiration for a book based on my life and barnyard activism, written by E.B. White.</p>
+					<p class="description">Was the inspiration for a book based on my life and barnyard activism, written by E.B. White.</p>
 				<label><h5>Month/Year</h5></label>
-					<p>1952</p>
+					<p class="award_date">1952</p>
 				<label><h5>Title</h5></label>
-					<p>Muse</p>
+					<p class="award_title">Muse</p>
 		</div>
 		</fieldset>
 	</form>
